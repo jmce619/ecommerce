@@ -10,7 +10,7 @@ export const HeroBanner = () => {
             <img src="" alt="mini-bike" className="hero-banner-image"/>
             
             <div><Link href="/product/ID">
-                <button type="button">BUTTON TEXT</button>
+                <button type="button">BUTTON TEXT 3</button>
             </Link>
             </div>
             <div className="desc">
