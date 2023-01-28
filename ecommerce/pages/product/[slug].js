@@ -3,7 +3,7 @@ import { AiOutlineMinus, AiOutlinePlus, AiFillStar, AiOutlineStar } from 'react-
 
 import { client, urlFor } from '../../lib/client';
 import { Product } from '../../ecommerce/components';
-import { useStateContext } from '../../context/StateContext';
+import { useStateContext } from '../../ecommerce/context/StateContext';
 
 const ProductDetails = ({ product, products }) => {
   const { image, name, details, price } = product;

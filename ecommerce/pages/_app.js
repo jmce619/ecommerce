@@ -1,6 +1,18 @@
-import '@/styles/globals.css'
 import React from 'react';
+import { Toaster } from 'react-hot-toast';
 
-export default function App({ Component, pageProps }) {
-  return <Component {...pageProps} />
+import { Layout } from '../ecommerce/components';
+import { StateContext } from '../ecommerce/context/StateContext';
+
+function MyApp({ Component, pageProps }) {
+  return (
+    <StateContext>
+      <Layout>
+        <Toaster />
+        <Component {...pageProps} />
+      </Layout>
+    </StateContext>
+  )
 }
+
+export default MyApp
